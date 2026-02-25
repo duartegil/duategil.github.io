@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil - Mon site de rêve</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Accueil</a>
+  <a href="production.html">Production scolaire</a>
+  <a href="videos.html">Mes vidéos</a>
+  <a href="passions.html">Mes passions</a>
+  <a href="site-de-reve.html">Mon site de rêve</a>
+</nav>
+
+<h1>Bienvenue sur mon site de rêve !</h1>
+<p>Je suis [Nom de ton ami], et voici mon site perso. Ici, tu peux découvrir mes passions, mes productions scolaires et mes rêves.</p>
+
+<!-- Avatar -->
+<img src="avatar.png" alt="Avatar de [Nom]" width="200" style="border-radius:50%; border: 4px solid #6b4c3b;">
+
+<!-- Musique -->
+<h2>🎵 Musique d'ambiance</h2>
+<button onclick="playMusic()">▶️ Activer la musique</button>
+<button onclick="pauseMusic()">⏸️ Pause</button>
+<audio id="bg-music">
+  <source src="musique.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+var music = document.getElementById("bg-music");
+function playMusic() { music.play(); }
+function pauseMusic() { music.pause(); }
+</script>
+
+</body>
+</html>
